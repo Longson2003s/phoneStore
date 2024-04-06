@@ -6,4 +6,5 @@ export const WrapperTypeProduct = styled.div`
   gap: 24px;
   justifu-content: flex-start;
   border-bottom: 1px solid red;
+  height: 20px;
 ` 
