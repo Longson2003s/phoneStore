@@ -65,20 +65,7 @@ const NavbarComponent = () => {
       <WrapperContent>
         {renderContent("text", ["Smart Phone", "AppWatch", "TableLet"])}
       </WrapperContent>
-      <WrapperContent>
-        {renderContent("checkbox", [
-          { value: "a", label: "A" },
-          { value: "b", label: "B" },
-        ])}
-      </WrapperContent>
-      <WrapperContent>
-        {renderContent("star", [3,4,5
-        ])}
-      </WrapperContent>
-      <WrapperContent>
-        {renderContent("price", ['20 up',' 20 down'
-        ])}
-      </WrapperContent>
+     
     </div>
   );
 };
