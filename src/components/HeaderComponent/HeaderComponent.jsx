@@ -1,4 +1,4 @@
-import { Col } from "antd";
+import { Badge, Col } from "antd";
 
 import React from "react";
 import {
@@ -17,25 +17,22 @@ import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 
 const HeaderComponent = () => {
   return (
-    <div>
-      <WrapperHeader gutter='16px'>
-        <Col span={6}>
+    <div style={{ width:'100%' , background: 'rgb(26,148,255)' , display: 'flex' , justifyContent:'center',}}>
+      <WrapperHeader>
+        <Col span={5}>
           <WrapperTextHeader>PHONESTORE</WrapperTextHeader>
         </Col>
-        <Col span={12}>
+        <Col span={13}>
           <ButtonInputSearch
           size = "large"
           bordered= {false}
           placeholder = "input search text"
           textButton = "Search"
 
-        
-          
-
             // onSearch={onSearch}
           />
         </Col>
-        <Col span={6} style={{display:'flex',gap:'20px', alignItems:'center'}} >
+        <Col span={6} style={{display:'flex',gap:'54px', alignItems:'center'}} >
           <WrapperHeaderAccout>
             <UserOutlined style={{ fontSize: "30px" }} />
             <div>
@@ -46,8 +43,10 @@ const HeaderComponent = () => {
               </div>
             </div>
           </WrapperHeaderAccout>
-          <div>       
+          <div>
+            <Badge count={4} size="small">      
               <ShoppingCartOutlined style={{ fontSize: "30px" ,color:'#fff'}}/>
+              </Badge> 
               <WrapperTextHeaderSmall>Cart</WrapperTextHeaderSmall>           
           </div>
         </Col>

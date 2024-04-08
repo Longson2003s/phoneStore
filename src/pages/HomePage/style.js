@@ -6,12 +6,11 @@ export const WrapperTypeProduct = styled.div`
   align - items:center;
   gap: 24px;
   justifu-content: flex-start;
-  border-bottom: 1px solid red;
-  height: 20px;
+  height: 44px;
 ` 
 
 export const WrapperButtonMore = styled(ButtonComponent)`
- &  :hover {
+  &:hover {
   color: #fff;
   background: rgb (13, 92 ,182);
   span {
@@ -20,4 +19,10 @@ export const WrapperButtonMore = styled(ButtonComponent)`
  }
  width: 100%;
  text-align: center;
+`
+export const WrapperProducts = styled.div`
+    display: flex;
+    gap: 14px;
+    margin-top:20px;
+    flexWrap: wrap;
 `
